@@ -1,0 +1,229 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CustomerOnBoardMOCK",
+		"_postman_id": "848a9c88-fdee-105f-5e51-682703f892c6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"request": {
+				"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/customers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"customer\":{\"name\":\"John\", \"designation\":\"Manager\", \"email\":\"john@123\" },\n \"address\":{\"city\":\"New York\",\t \"country\":\"USA\"}\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "9c05fd3b-51cb-4de0-80bd-bb5f0b7b8238",
+					"name": "customers",
+					"originalRequest": {
+						"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/customers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"customer\":{\"name\":\"John\", \"designation\":\"Manager\", \"email\":\"john@123\" },\n \"address\":{\"city\":\"New York\",\t \"country\":\"USA\"}\n}"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"name": "Content-Type"
+						}
+					],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "{\"custId\": 123}"
+				}
+			]
+		},
+		{
+			"name": "tenants/1/config",
+			"request": {
+				"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/tenants/1/config",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "8609dfab-f0b7-4006-b063-eada2a86387d",
+					"name": "tenants/1/config",
+					"originalRequest": {
+						"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/tenants/1/config",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"name": "Content-Type"
+						}
+					],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "{\"customer\" : [\"name\",\"designation\",\"email\",\"phoneNo\"],\n \"address\" : [\"street\",\"zipcode\",\"city\",\"country\"]\n}"
+				}
+			]
+		},
+		{
+			"name": "customers/upload",
+			"request": {
+				"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/customers/upload",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "Cust.xlsx"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "44c9a1af-3908-408a-a116-d6932ffad379",
+					"name": "customers/upload",
+					"originalRequest": {
+						"url": "https://b57f7612-4f1e-45ec-90b5-2aa4113ee865.mock.pstmn.io/customers/upload",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "",
+									"type": "file",
+									"src": {
+										"0": {}
+									}
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		}
+	]
+}
+
+{
+	"variables": [],
+	"info": {
+		"name": "mockapi",
+		"_postman_id": "b0fc5540-253b-42b8-fc4d-75a91d0bab55",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customers/upload",
+			"request": {
+				"url": "https://44ac8c05-fd0c-4c5b-9ad4-56ff88100874.mock.pstmn.io/customers/upload",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "",
+							"type": "file",
+							"src": "Cust.xlsx"
+						}
+					]
+				},
+				"description": null
+			},
+			"response": [
+				{
+					"id": "3d75a36f-7016-4730-bea1-32e61d5bf9eb",
+					"name": "Bad:customers/upload",
+					"originalRequest": {
+						"url": "https://44ac8c05-fd0c-4c5b-9ad4-56ff88100874.mock.pstmn.io/customers/upload",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "",
+									"type": "file",
+									"src": {
+										"0": {}
+									}
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "parsed",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text",
+							"name": "Content-Type"
+						}
+					],
+					"cookie": [],
+					"responseTime": 0,
+					"body": "{\"rowid\":123,\n\"errorId\": \"E001\",\n\"errorMsg\":\"null row\"}"
+				}
+			]
+		}
+	]
+}
