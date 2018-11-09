@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 09 00:57:55 IST 2018</td>
+<td>Started on:</td><td>Fri Nov 09 19:57:15 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4770 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7993 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ZyTest.CustomerOnboardingApp.FirstTest.testGetTenantConfig()'><b>testGetTenantConfig</b><br>Test class: ZyTest.CustomerOnboardingApp.FirstTest</td>
-<td><div><pre>java.lang.AssertionError: expected [201] but found [404]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.testng.Assert.assertEquals(Assert.java:382)
-	at ZyTest.CustomerOnboardingApp.FirstTest.testGetTenantConfig(FirstTest.java:50)
+<td title='zytest.custonboardapp.tests.TemplateUploadTest.testCreateCustomer()'><b>testCreateCustomer</b><br>Test class: zytest.custonboardapp.tests.TemplateUploadTest</td>
+<td><div><pre>java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:191)
+	at zytest.custonboardapp.tests.TemplateUploadTest.testCreateCustomer(TemplateUploadTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,14 +103,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace163385254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace163385254'><pre>java.lang.AssertionError: expected [201] but found [404]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.testng.Assert.assertEquals(Assert.java:382)
-	at ZyTest.CustomerOnboardingApp.FirstTest.testGetTenantConfig(FirstTest.java:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace820878444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820878444'><pre>java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:191)
+	at zytest.custonboardapp.tests.TemplateUploadTest.testCreateCustomer(TemplateUploadTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,7 +133,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 </pre></div></td>
 <td>0</td>
-<td>ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb</td></tr>
+<td>zytest.custonboardapp.tests.TemplateUploadTest@27f674d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -151,15 +143,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ZyTest.CustomerOnboardingApp.FirstTest.testCreateCustomer()'><b>testCreateCustomer</b><br>Test class: ZyTest.CustomerOnboardingApp.FirstTest</td>
+<td title='zytest.custonboardapp.tests.TemplateUploadTest.testGetTenantConfig()'><b>testGetTenantConfig</b><br>Test class: zytest.custonboardapp.tests.TemplateUploadTest</td>
 <td></td>
-<td>3</td>
-<td>ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb</td></tr>
+<td>1</td>
+<td>zytest.custonboardapp.tests.TemplateUploadTest@27f674d</td></tr>
 <tr>
-<td title='ZyTest.CustomerOnboardingApp.FirstTest.testUploadXlsPositivecase()'><b>testUploadXlsPositivecase</b><br>Test class: ZyTest.CustomerOnboardingApp.FirstTest</td>
+<td title='zytest.custonboardapp.tests.TemplateUploadTest.testGetTenantConfigResponse()'><b>testGetTenantConfigResponse</b><br>Test class: zytest.custonboardapp.tests.TemplateUploadTest</td>
 <td></td>
-<td>0</td>
-<td>ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb</td></tr>
+<td>2</td>
+<td>zytest.custonboardapp.tests.TemplateUploadTest@27f674d</td></tr>
+<tr>
+<td title='zytest.custonboardapp.tests.TemplateUploadTest.testUploadXlsErrorCase()'><b>testUploadXlsErrorCase</b><br>Test class: zytest.custonboardapp.tests.TemplateUploadTest</td>
+<td></td>
+<td>1</td>
+<td>zytest.custonboardapp.tests.TemplateUploadTest@27f674d</td></tr>
+<tr>
+<td title='zytest.custonboardapp.tests.TemplateUploadTest.testUploadXlsPositiveCase()'><b>testUploadXlsPositiveCase</b><br>Test class: zytest.custonboardapp.tests.TemplateUploadTest</td>
+<td></td>
+<td>1</td>
+<td>zytest.custonboardapp.tests.TemplateUploadTest@27f674d</td></tr>
 </table><p>
 </body>
 </html>

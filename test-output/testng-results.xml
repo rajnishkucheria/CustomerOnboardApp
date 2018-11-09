@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4770" started-at="2018-11-08T19:27:55Z" finished-at="2018-11-08T19:28:00Z">
+  <suite name="Default suite" duration-ms="7993" started-at="2018-11-09T14:27:15Z" finished-at="2018-11-09T14:27:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4770" started-at="2018-11-08T19:27:55Z" finished-at="2018-11-08T19:28:00Z">
-      <class name="ZyTest.CustomerOnboardingApp.FirstTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb]" name="beforeTest" is-config="true" duration-ms="9" started-at="2018-11-09T00:57:55Z" finished-at="2018-11-09T00:57:55Z">
+    <test name="Default test" duration-ms="7993" started-at="2018-11-09T14:27:15Z" finished-at="2018-11-09T14:27:23Z">
+      <class name="zytest.custonboardapp.tests.TemplateUploadTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="beforeTest" is-config="true" duration-ms="7" started-at="2018-11-09T19:57:15Z" finished-at="2018-11-09T19:57:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb]" name="testCreateCustomer" duration-ms="3082" started-at="2018-11-09T00:57:55Z" finished-at="2018-11-09T00:57:58Z">
+        <test-method status="PASS" signature="testGetTenantConfigResponse()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="testGetTenantConfigResponse" duration-ms="2676" started-at="2018-11-09T19:57:15Z" finished-at="2018-11-09T19:57:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateCustomer -->
-        <test-method status="FAIL" signature="testGetTenantConfig()[pri:0, instance:ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb]" name="testGetTenantConfig" duration-ms="830" started-at="2018-11-09T00:57:58Z" finished-at="2018-11-09T00:57:59Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testGetTenantConfigResponse -->
+        <test-method status="PASS" signature="testUploadXlsErrorCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="testUploadXlsErrorCase" duration-ms="1802" started-at="2018-11-09T19:57:18Z" finished-at="2018-11-09T19:57:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadXlsErrorCase -->
+        <test-method status="FAIL" signature="testCreateCustomer()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="testCreateCustomer" duration-ms="21" started-at="2018-11-09T19:57:20Z" finished-at="2018-11-09T19:57:20Z">
+          <exception class="java.lang.UnsupportedOperationException">
             <message>
-              <![CDATA[expected [201] but found [404]]]>
+              <![CDATA[JsonObject]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [201] but found [404]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertEquals(Assert.java:125)
-	at org.testng.Assert.assertEquals(Assert.java:372)
-	at org.testng.Assert.assertEquals(Assert.java:382)
-	at ZyTest.CustomerOnboardingApp.FirstTest.testGetTenantConfig(FirstTest.java:50)
+              <![CDATA[java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:191)
+	at zytest.custonboardapp.tests.TemplateUploadTest.testCreateCustomer(TemplateUploadTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,19 +54,23 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.UnsupportedOperationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCustomer -->
+        <test-method status="PASS" signature="testUploadXlsPositiveCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="testUploadXlsPositiveCase" duration-ms="1539" started-at="2018-11-09T19:57:20Z" finished-at="2018-11-09T19:57:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUploadXlsPositiveCase -->
+        <test-method status="PASS" signature="testGetTenantConfig()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="testGetTenantConfig" duration-ms="1934" started-at="2018-11-09T19:57:21Z" depends-on-methods="zytest.custonboardapp.tests.TemplateUploadTest.testGetTenantConfigResponse" finished-at="2018-11-09T19:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTenantConfig -->
-        <test-method status="PASS" signature="testUploadXlsPositivecase()[pri:0, instance:ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb]" name="testUploadXlsPositivecase" duration-ms="829" started-at="2018-11-09T00:57:59Z" finished-at="2018-11-09T00:58:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUploadXlsPositivecase -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:ZyTest.CustomerOnboardingApp.FirstTest@6bdf28bb]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-09T00:58:00Z" finished-at="2018-11-09T00:58:00Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@27f674d]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-09T19:57:23Z" finished-at="2018-11-09T19:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- ZyTest.CustomerOnboardingApp.FirstTest -->
+      </class> <!-- zytest.custonboardapp.tests.TemplateUploadTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

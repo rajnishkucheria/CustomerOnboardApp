@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.testdomain.test.FirstTest"/>
+      <class name="ZyTest.CustomerOnboardingApp.TemplateUploadTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
