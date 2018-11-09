@@ -1,20 +1,25 @@
 package zytest.custonboardapp.operations;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.Properties;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 public class CallRestServices {
+	
+	ReadTestData readData = new ReadTestData();
+	Properties prop; 
 	
 	/* Mock Web service for getTenant config /Tenant/<id>/config
 	 * 
 	 */
 	
-	public Response getTenantConfig(String tenantId)
+	public Response getTenantConfig(String tenantId) throws IOException
 	  {
-		String  url = "https://5d6fb7c7-9d21-43dc-8f66-17c54ba4c9e7.mock.pstmn.io/tenants/"+tenantId+"/config";
+		prop = readData.getAPIRepository();
+		String  url = prop.getProperty("TENANT_MOCKAPI")+tenantId+prop.getProperty("TENANT_CONFIG_VALUE_MOCKAPI");
 		Response res = RestAssured.given().
 				    when().get(url).then().extract().response();
 		  return res;	    
@@ -24,10 +29,11 @@ public class CallRestServices {
 	 *  positive test scenario
 	 */
 	
-	public Response getTemplateUploadResponse(String filePath)
+	public Response getTemplateUploadResponse(String filePath) throws IOException
 	  {
+		prop = readData.getAPIRepository(); 
 		Response res = RestAssured.given().multiPart(new File(System.getProperty("user.dir") + "/" + filePath)).
-			    when().post("https://4f9aa1f6-be6c-4a2a-b03d-becdc7ffe7a8.mock.pstmn.io/customers/upload").then().extract().response();
+			    when().post(prop.getProperty("UPLOAD_MOCKAPI")).then().extract().response();
 		  return res;	    
 	  }
 	
@@ -35,17 +41,19 @@ public class CallRestServices {
 	 *  Error test scenario
 	 */
 	
-	public Response getTemplateUploadResponseErrorCase(String filePath)
+	public Response getTemplateUploadResponseErrorCase(String filePath) throws IOException
 	  {
+		prop = readData.getAPIRepository(); 
 		Response res = RestAssured.given().multiPart(new File(System.getProperty("user.dir") + "/" + filePath)).
-			    when().post("https://5d6fb7c7-9d21-43dc-8f66-17c54ba4c9e7.mock.pstmn.io/customers/upload").then().extract().response();
+			    when().post(prop.getProperty("UPLOAD_ERROR_MOCKAPI")).then().extract().response();
 		  return res;	    
 	  }
 	
-	public Response createNewCustomer()
+	public Response createNewCustomer() throws IOException
 	  {
-		  Response res = RestAssured.given().
-				    when().post("https://5d6fb7c7-9d21-43dc-8f66-17c54ba4c9e7.mock.pstmn.io/customers").
+		prop = readData.getAPIRepository(); 
+		Response res = RestAssured.given().
+				    when().post(prop.getProperty("CUSTOMER_MOCKAPI")).
 				    then().extract().response();
 		  return res;	    
 	  }
