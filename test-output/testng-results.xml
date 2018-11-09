@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11931" started-at="2018-11-09T19:46:45Z" finished-at="2018-11-09T19:46:57Z">
+  <suite name="Default suite" duration-ms="11851" started-at="2018-11-09T19:54:50Z" finished-at="2018-11-09T19:55:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11931" started-at="2018-11-09T19:46:45Z" finished-at="2018-11-09T19:46:57Z">
+    <test name="Default test" duration-ms="11851" started-at="2018-11-09T19:54:50Z" finished-at="2018-11-09T19:55:02Z">
       <class name="zytest.custonboardapp.tests.TemplateUploadTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="beforeTest" is-config="true" duration-ms="5" started-at="2018-11-10T01:16:45Z" finished-at="2018-11-10T01:16:45Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="beforeTest" is-config="true" duration-ms="6" started-at="2018-11-10T01:24:50Z" finished-at="2018-11-10T01:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testGetTenantConfigResponse()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testGetTenantConfigResponse" duration-ms="3247" started-at="2018-11-10T01:16:45Z" finished-at="2018-11-10T01:16:48Z">
+        <test-method status="PASS" signature="testGetTenantConfigResponse()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testGetTenantConfigResponse" duration-ms="3155" started-at="2018-11-10T01:24:50Z" finished-at="2018-11-10T01:24:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTenantConfigResponse -->
-        <test-method status="PASS" signature="validateXlsTemplate()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="validateXlsTemplate" duration-ms="250" started-at="2018-11-10T01:16:48Z" finished-at="2018-11-10T01:16:48Z">
+        <test-method status="PASS" signature="validateXlsTemplate()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="validateXlsTemplate" duration-ms="202" started-at="2018-11-10T01:24:53Z" finished-at="2018-11-10T01:24:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateXlsTemplate -->
-        <test-method status="PASS" signature="testUploadXlsErrorCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testUploadXlsErrorCase" duration-ms="2478" started-at="2018-11-10T01:16:48Z" finished-at="2018-11-10T01:16:51Z">
+        <test-method status="PASS" signature="testUploadXlsErrorCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testUploadXlsErrorCase" duration-ms="2287" started-at="2018-11-10T01:24:54Z" finished-at="2018-11-10T01:24:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUploadXlsErrorCase -->
-        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testCreateCustomer" duration-ms="2023" started-at="2018-11-10T01:16:51Z" finished-at="2018-11-10T01:16:53Z">
+        <test-method status="PASS" signature="testCreateCustomer()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testCreateCustomer" duration-ms="2071" started-at="2018-11-10T01:24:56Z" finished-at="2018-11-10T01:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateCustomer -->
-        <test-method status="PASS" signature="testUploadXlsPositiveCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testUploadXlsPositiveCase" duration-ms="1850" started-at="2018-11-10T01:16:53Z" finished-at="2018-11-10T01:16:55Z">
+        <test-method status="PASS" signature="testUploadXlsPositiveCase()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testUploadXlsPositiveCase" duration-ms="2064" started-at="2018-11-10T01:24:58Z" finished-at="2018-11-10T01:25:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUploadXlsPositiveCase -->
-        <test-method status="PASS" signature="testGetTenantConfig()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testGetTenantConfig" duration-ms="2057" started-at="2018-11-10T01:16:55Z" depends-on-methods="zytest.custonboardapp.tests.TemplateUploadTest.testGetTenantConfigResponse" finished-at="2018-11-10T01:16:57Z">
+        <test-method status="PASS" signature="testGetTenantConfig()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="testGetTenantConfig" duration-ms="2047" started-at="2018-11-10T01:25:00Z" depends-on-methods="zytest.custonboardapp.tests.TemplateUploadTest.testGetTenantConfigResponse" finished-at="2018-11-10T01:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTenantConfig -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-10T01:16:57Z" finished-at="2018-11-10T01:16:57Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:zytest.custonboardapp.tests.TemplateUploadTest@34ce8af7]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-11-10T01:25:02Z" finished-at="2018-11-10T01:25:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
